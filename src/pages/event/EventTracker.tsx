@@ -385,7 +385,6 @@ const EventTracker: React.FC<{}> = observer(() => {
                   handleFetchGraph(value.id);
                 }
               }}
-              disabled={isCurrEventLoading || isFetching}
             />
           </Grid>
           <Grid item>
@@ -403,7 +402,6 @@ const EventTracker: React.FC<{}> = observer(() => {
                 setPredCron(undefined);
                 handleFetchGraph(currEvent.eventId);
               }}
-              disabled={isCurrEventLoading || isFetching}
             >
               {t("event:tracker.button.curr_event")}
             </Button>
